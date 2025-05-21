@@ -37,7 +37,7 @@ def check_bounce_and_log(config_id, recipient_email):
     config = DummyEmailConfiguration.objects.get(id=config_id)
 
     # Wait for a random delay between 5-7 minutes
-    time.sleep(random.randint(5, 10))
+    time.sleep(random.randint(300, 400))
 
     bounce_detected = False
     imap = None
